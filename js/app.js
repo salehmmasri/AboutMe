@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 'use strict';
-var total=0;
+var total = 0;
 var uName = prompt('please enter your name');
 console.log(uName);
 alert('hello ' + uName + ' we will play (Y/N) ');
@@ -9,13 +9,13 @@ console.log('major  ' + major);
 var testMajor = major.toLowerCase();
 switch (testMajor) {
 case 'yes':
-  total=total+1;
-  console.log(total);
+  total = total + 1;
   console.log('Major yes true');
-
+  alert('your answer is true');
   break;
 
 default:
+  alert('your answer is false');
 
   console.log('Major No False');
 
@@ -29,10 +29,11 @@ switch (testcar) {
 case 'yes':
   total++;
   console.log('car yes true');
-
+  alert('your answer is true');
   break;
 
 default:
+  alert('your answer is false');
 
   console.log('car No False');
 
@@ -44,10 +45,11 @@ switch (testCoffee) {
 case 'yes':
   total++;
   console.log(`coffee yes true ${coffee}`);
-
+  alert('your answer is true');
   break;
 
 default:
+  alert('your answer is false');
 
   console.log('coffee No False');
 
@@ -59,10 +61,11 @@ switch (testColor) {
 case 'yes':
   total++;
   console.log('color yes true ');
-
+  alert('your answer is true');
   break;
 
 default:
+  alert('your answer is false');
 
   console.log('color No False');
 
@@ -74,12 +77,12 @@ switch (testSport) {
 case 'yes':
   total++;
   console.log('sport yes true ');
-
+  alert('your answer is true');
   break;
 
 default:
-
+  alert('your answer is false');
   console.log('sport No False');
 
 }
-alert('you got '+total);
+alert('you got ' + total);
