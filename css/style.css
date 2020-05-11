@@ -1,0 +1,10 @@
+body{
+    background-color: darkgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgreen;
+}
+.alignCenter{
+    text-align: center;
+    margin-top: 50px;
+    font-size:50px ;
+}
