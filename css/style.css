@@ -8,3 +8,20 @@ body{
     margin-top: 50px;
     font-size:50px ;
 }
+main{
+    padding: 15px;
+}
+#para{
+    
+    margin-top: 20%;
+    color: darkblue;
+    font-size: 30px;
+    /* padding: 10px; */
+}
+footer p{
+    text-align: center;
+    margin-top: 10%;
+    color: fff;
+    font-size: 20px;
+    padding: 10px;
+}

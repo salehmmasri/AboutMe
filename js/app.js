@@ -1,14 +1,15 @@
-/* eslint-disable no-unused-vars */
+
 'use strict';
 var total = 0;
 var uName = prompt('please enter your name');
 console.log(uName);
-alert('hello ' + uName + ' we will play (Y/N) ');
-var major = prompt('my major is software eng');
+
+alert('hello ' + uName + ' we will play yes or no game oki (Y/N)');
+var major = prompt('my major is software eng').toLowerCase();
 console.log('major  ' + major);
-var testMajor = major.toLowerCase();
-switch (testMajor) {
+switch (major) {
 case 'yes':
+case 'y' :
   total = total + 1;
   console.log('Major yes true');
   alert('your answer is true');
@@ -21,11 +22,10 @@ default:
 
 }
 
-var car = prompt('Do I have a car?');
+var car = prompt('Do I have a car?').toLowerCase();
 console.log('car  ' + car);
 
-var testcar = car.toLowerCase();
-switch (testcar) {
+switch (car) {
 case 'yes':
   total++;
   console.log('car yes true');
@@ -39,10 +39,10 @@ default:
 
 }
 
-var coffee = prompt('I love coffee');
-var testCoffee = coffee.toLowerCase();
-switch (testCoffee) {
+var coffee = prompt('I love coffee').toLowerCase();
+switch (coffee) {
 case 'yes':
+case 'y':
   total++;
   console.log(`coffee yes true ${coffee}`);
   alert('your answer is true');
@@ -55,10 +55,10 @@ default:
 
 }
 
-var color = prompt('my favorite color is black ');
-var testColor = color.toLowerCase();
-switch (testColor) {
+var color = prompt('my favorite color is black ').toLowerCase();
+switch (color) {
 case 'yes':
+case 'y':
   total++;
   console.log('color yes true ');
   alert('your answer is true');
@@ -71,9 +71,8 @@ default:
 
 }
 
-var sport = prompt('my favorite sport is football');
-var testSport = sport.toLowerCase();
-switch (testSport) {
+var sport = prompt('my favorite sport is football').toLowerCase();
+switch (sport) {
 case 'yes':
   total++;
   console.log('sport yes true ');
@@ -86,3 +85,42 @@ default:
 
 }
 alert('you got ' + total);
+alert('now lets play another game you should guss my age i will helpe you don\'t worry');
+var myAge=prompt('please enter the number');
+var count;
+count=0;
+do {
+  if(myAge==24){
+    alert('right answer');
+    count=9;
+  }
+  else if(myAge>24){
+    count++;
+    myAge=prompt('too high try again');
+    console.log(count);
+  }
+  else if(myAge<24){
+    count++;
+    myAge=prompt('too low');
+    console.log(count);
+  }
+} while (count<=3);
+if(count>3 && count<8){
+  alert('the right answer is 24');
+  console.log('in if'+count);
+}
+
+var arr=['bmw','kia','ferrari','lamborghini','mercedes'];
+alert('now the last one you should guess my favoret car');
+for (let i = 0; i < 6; i++) {
+  var guess=prompt('guess my favoret car').toLowerCase();
+  for (var j=0;j<arr.length;j++) {
+    var check=arr[j]==guess;
+    console.log(check);
+    if(check){
+      i=66;
+      break;
+    }
+
+  }
+}
