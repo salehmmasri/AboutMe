@@ -27,6 +27,7 @@ console.log('car  ' + car);
 
 switch (car) {
 case 'yes':
+case 'y':
   total++;
   console.log('car yes true');
   alert('your answer is true');
@@ -74,6 +75,7 @@ default:
 var sport = prompt('my favorite sport is football').toLowerCase();
 switch (sport) {
 case 'yes':
+case 'y':
   total++;
   console.log('sport yes true ');
   alert('your answer is true');
@@ -124,3 +126,8 @@ for (let i = 0; i < 6; i++) {
 
   }
 }
+
+function x(){
+  console.log('saleh');
+}
+x();
